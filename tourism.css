@@ -1,0 +1,339 @@
+.containor {
+    height: 1400px;
+}
+header {
+	
+	right: 10px;
+    text-align: center;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+	
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; 
+	color: #000000;
+	text-shadow: 0 5px 10px #000000;
+	animation: colorChange 5s infinite;
+
+}	
+@keyframes colorChange {
+    0% { color: #000000; } /* black */
+    33% { color: #ff9933; } /* Green */
+	44% { color: #ffffff; } /* brown */
+    66% { color: #00ff00; } /* Blue */
+    100% { color: #000000; } /* black (back to the start) */
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li {
+    float: right;
+    position: relative; /* Added to enable positioning of the select box */
+}
+
+.navbar {
+
+    display: inline-block;
+    position: absolute;
+    left: 44%;
+    font-size: x-large;
+}
+
+.navbar a:hover {
+    color: rgb(0, 255, 179);
+	
+}
+
+.navbar {
+    animation: anim 2s forwards;
+    opacity: 0;
+}
+
+@keyframes anim {
+    to {
+        opacity: 1;
+    }
+}
+
+.imgone {
+    display:inline-block;
+    width: 60px;
+    right: 520px;
+    position: relative;
+    animation: MYDIV 0.25s forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes MYDIV {
+    from {
+        transform: translateX(400px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.dis {
+    font-family: monospace;
+    font-size: 50px;
+}
+
+.travel {
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    10% { color: rgb(0, 0, 0); }
+    47% { color: black; }
+    62% { color: transparent; }
+    97% { color: transparent; }
+    100% { color: black; }
+}
+
+.images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    top: 330px;
+    padding: 100px 50px;
+    overflow: hidden;
+}
+
+.images .card {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 9px 80px black;
+    transition: 0.5s;
+}
+
+.images .card:hover {
+    height: 350px;
+}
+
+.images .card .imgbx {
+    position: absolute;
+    width: 290px;
+    height: 150px;
+    border-radius: 12px;
+    bottom: 20px;
+    top: 20px;
+    transition: 0.5s;
+    background: #333;
+    overflow: hidden;
+}
+
+.images .card:hover .imgbx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.images .card .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.images .card .content a {
+    text-decoration: none;
+    color: rgb(116, 175, 227);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.images .card:hover .content a {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.images .card .content a {
+    text-decoration: none;
+	color: rgb(116, 175, 227);
+		
+}
+
+.images .card .content {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    text-align: center;
+    color: transparent;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for WebKit browsers */
+.images .card .content::-webkit-scrollbar {
+    display: none;
+}
+
+.images .card:hover .content {
+    color: #000000;
+    top: 100px;
+    animation: blin 2s;
+    cursor: pointer;
+}
+
+.images .card:not(:hover) .content {
+    color: transparent;
+}
+
+@keyframes blin {
+    0% { color: transparent; }
+    20% { color: transparent; }
+}
+
+.dia {
+    color: rgb(0, 0, 0);
+}
+
+.dia:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.exp {
+    position: absolute;
+    color: #000000;
+    left: 550px;
+    top: 420px;
+    display: inline-block;
+}
+
+.wi {
+    position: absolute;
+    left: 820px;
+    color: hsl(290, 100%, 41%);
+    top: 465px;
+    display: inline-block;
+}
+
+.gif {
+    left: 480px;
+    top: 430px;
+    position: absolute;
+}
+
+body {
+    background-image: url(images/coimbatore3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: aquamarine;
+}
+
+.para pre {
+    display: inline-block;
+    width: 600px;
+    left: 9px;
+    top: 200px;
+    position: absolute;
+    color: 	 #000000 ;
+    font-size: 20px;
+    text-shadow: 0 5px 10px #000000;
+}
+
+
+
+
+@keyframes MIV {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+
+
+@keyframes MIV {
+    from {
+        transform: translateX(1500px);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+.omv{
+	font-size:30px;
+    font-family: 'Times New Roman', serif;
+}
+footer {
+    background-color: DarkSalmon;
+    padding: 20px;	
+    text-align: center;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px DarkSalmon;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+	
+}
+.social-icons h2{
+	color: #ffffff;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.footer-text h2{
+	color: #ffffff;
+}
+.footer-text p {
+
+    font-size: 18px;
+    color: #333;
+    line-height: 1.4;
+    text-align: center;
+	color:#ffffff;
+}
